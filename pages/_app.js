@@ -1,7 +1,17 @@
-import '../styles/globals.css'
+import 's/globals.scss'
+import LayoutBase from 'layout/Base'
+import LayoutHeader from 'layout/Header'
+import LayoutFooter from 'layout/Footer'
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+function App({ Component, pageProps }) {
+  return (
+
+    <LayoutBase>
+      <LayoutHeader />
+        <Component {...pageProps} />
+      <LayoutFooter />
+    </LayoutBase>
+  )
 }
 
-export default MyApp
+export default App
