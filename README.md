@@ -26,7 +26,8 @@
 - [x] SWC 컴파일러 minify 적용
 - [x] 일부 Response Header 제거
 - [X] 기본 SEO 세팅 (Meta tag 등)
-
+- [X] build시 기본 sitemap 자동생성 (next-sitemap)
+ 
 ### env 세팅
 root 디렉토리에서 *env.boilerplate* 파일을 *env.local* 로 복사하여 사용
 
@@ -38,6 +39,9 @@ $ cp env.boilerplate env.local
 ```js
 #웹사이트 이름
 APP_WEBSITE_NAME=
+
+#웹사이트 Public 주소
+APP_WEBISTE_URL=
 
 #graphql endpoint 주소
 APP_WEBSITE_GRAPHQL_URL=
